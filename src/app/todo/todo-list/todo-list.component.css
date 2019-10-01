@@ -1,0 +1,30 @@
+.list {
+    width: 100%;
+    
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item-description {
+    width: 80%;
+}
+
+.completed {
+    color:rgb(45, 49, 31);
+    outline: none;
+
+}
+
+.done {
+    text-decoration: line-through;
+    color: rgb(85, 3, 3);
+    font-style: italic;
+}
+
+.delete {
+    color: rgb(85, 3, 3);
+
+}

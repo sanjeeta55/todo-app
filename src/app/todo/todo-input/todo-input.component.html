@@ -1,0 +1,8 @@
+
+    <mat-form-field class="todo-input">
+        <input matInput placeholder="Enter the List Item" #item (keyup.enter)="addTodo(item.value);item.value='' ">
+        <!-- <mat-error *ngIf="item.invalid">{{getErrorMessage()}}</mat-error> -->
+    </mat-form-field>   
+    <button mat-fab (click)="addTodo(item.value);item.value='' ">Add</button>
+
+

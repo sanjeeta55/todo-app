@@ -1,0 +1,17 @@
+
+<mat-list role="list" class="list">
+    <mat-list-item class="list-item" *ngFor="let items of todoListItems;let id=index">
+        <div class="list-item-description" [ngClass]="{done: items.completed}">{{items.todo}}</div>
+        <div>
+            <button mat-fab (click)="onTaskCheck(id)">
+                <mat-icon [ngClass]="{completed: items.completed}">done</mat-icon>
+            </button>
+        </div>
+        
+        <div>
+            <button mat-fab class="list-item-button" [disabled]="!items.completed" (click)="onDelete(id)">
+                <mat-icon color="warn" [ngClass]="{delete: !items.completed}">delete</mat-icon>
+            </button>
+        </div>
+    </mat-list-item>
+</mat-list>

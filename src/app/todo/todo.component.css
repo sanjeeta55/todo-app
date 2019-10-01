@@ -1,0 +1,41 @@
+body,
+html {
+  height: 100%;
+  
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://timelinecovers.pro/facebook-cover/download/pink-spring-flowers-facebook-cover.jpg");
+  /* Full height */
+  height: 50%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+app-todo-header {
+    margin-bottom: 2rem;
+}
+
+.todo-body {
+    height: 80vh;
+    width: 80%;
+    margin: 1rem auto;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position-y: -20vh;
+ 
+}
+
+app-todo-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-list {
+    margin:0 auto; 
+    margin-top: 1em;
+    width: 70%;
+}
